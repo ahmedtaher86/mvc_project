@@ -1,0 +1,23 @@
+{
+    
+    "//first_comment": "ya jimy wllahy el 3zeem ma fahm myteen om ay 7aga fel code da wllahy ma fahem ",
+
+    "autoload" : {
+        "psr-4" : {
+    
+
+            "MVC\\":"app"
+        }
+    },
+
+    "require":
+    {
+        "dcblogdev/pdo-wrapper":"^2.0",
+        "wixel/gump": "^1.11" 
+    } 
+
+
+
+
+
+    }
