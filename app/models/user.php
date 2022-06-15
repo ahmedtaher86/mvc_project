@@ -17,7 +17,7 @@ class user extends model
 
 
     }
-
+// test
 
     public function shoof_email_shoof_password ($email , $password)
     {
