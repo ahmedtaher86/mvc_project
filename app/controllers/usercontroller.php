@@ -9,6 +9,9 @@
 namespace MVC\controllers ; 
  
 use MVC\core\controller; 
+use MVC\models\user;
+use GUMP ;
+use MVC\core\session ; 
 
 
 
@@ -17,7 +20,18 @@ class usercontroller extends controller
   
     private $user_data ; 
 
-  
+    public function __construct ()
+    {
+        Session::Start(); 
+        $this->user_data = Session::Get_Session_of('user');
+
+        if(empty($this->user_data))
+        {
+            echo "please login first <br>" ;
+
+        }
+    }
+
 
 
     public function index()

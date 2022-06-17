@@ -12,15 +12,12 @@ namespace MVC\core;
 
 class helpers {
 
+    // 3malt el function de 3shan 
     public static function redirect ($path) 
     {
-        header("Location:DOMAIN_NAME".$path);
-
+        header("Location:".DOMAIN_NAME.$path);
 
     }
-
-
-
 
 }
 
